@@ -25,13 +25,10 @@ while True:
     user_guess = input("please input your guess number ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
-        if user_guess <= 0:
-            print("please input postive number next time")
-            quit()
-            
-    else:
-        print("please provide a valid number next time")
-        break
+    elif user_guess <= 0:
+        print("please input postive number next time")
+        quit()
+        
     if user_guess == guess_number:
         print("you got it correct, Congradulations!")
         break
