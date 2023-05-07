@@ -32,7 +32,11 @@ while True:
     if user_guess == guess_number:
         print("you got it correct, Congradulations!")
         break
-    else:
-        print("wrong answer")
+
+    elif user_guess > guess_number:
+        print("wrong answer the number is lower than your guess try again")
+        continue
+    elif user_guess < guess_number:
+        print("wrong answer the number is higher than your guess try again")
         continue
 print("you got it in", no_of_guess, "guesses")
