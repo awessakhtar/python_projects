@@ -12,8 +12,13 @@ uses for loops for each top news
 
 it also uses cards from bootstrap 
 
+Layout.html
+added navbar from bootstrap
+modified nave bar behaviour
+
+
 in future
-    Layout.html is to be build
+    Layout.html is to be build -done
     styles.css is to be build styling is to be imporved
     scripts.js is to be build.
 
