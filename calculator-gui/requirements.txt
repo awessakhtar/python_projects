@@ -1,0 +1,4 @@
+if you wnat this code to work on wsl environment. 
+you need to instlal your xm server in your windows
+and then set display veriable according to configuration of the server
+pycharm does not have any such requirement
