@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Tasks</title>
+</head>
+<body>
+    <h1>To Do Tasks</h1>
+    <br>
+    <h3>Enter task</h3>
+    <form action="/" method="POST">
+        <Input type="text" placeholder="Task" id="newtask" name="newtask" autofocus>
+        <button type="submit" name="addtask">Add to List</button>
+        <br>
+    </form>
+    
+    <table>
+        <th>
+            <tr>
+                <td>Id</td>
+                <td>task</td>
+                <td></td>
+            </tr>
+        </th>
+        <tbody>
+            {% for task in tasks %}       
+            <tr>
+                <td>{{task[0]}}</td>
+                <td>{{task[1]}}</td>
+                <td>
+                    <form action="#" method="POST">
+                        <input type="hidden" name="{{task[0]}}" id = "{{task[0]}}">
+                        
+                        <button type="submit">Delete</button>
+                    </form>
+                    
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>       
+</body>
+</html>
